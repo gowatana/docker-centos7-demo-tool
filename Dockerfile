@@ -15,3 +15,7 @@ RUN yum install \
   which \
   --assumeyes; yum clean all
 
+RUN yum install httpd --assumeyes; yum clean all
+EXPOSE 80
+CMD ["httpd", "-D", "FOREGROUND"]
+
