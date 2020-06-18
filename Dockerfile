@@ -10,5 +10,5 @@ RUN yum install \
   unzip \
   wget \
   tcpdump \
-  --assumeyes
+  --assumeyes; yum clean all
 
