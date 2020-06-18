@@ -9,6 +9,7 @@ RUN yum install \
   bind-utils \
   unzip \
   wget \
+  nc \
   tcpdump \
   --assumeyes; yum clean all
 
