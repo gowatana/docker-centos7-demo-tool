@@ -15,3 +15,12 @@ buil & run container.
 [root@b4ca88b12a8a /]# cat /etc/centos-release
 CentOS Linux release 7.8.2003 (Core)
 ```
+
+run httpd container.
+
+```
+# docker image build --tag centos7:local-httpd .
+# docker run -itd -p 8000:80 centos7:local-httpd
+# curl localhost:8000
+```
+
