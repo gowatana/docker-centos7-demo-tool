@@ -11,5 +11,6 @@ RUN yum install \
   wget \
   nc \
   tcpdump \
+  which \
   --assumeyes; yum clean all
 
