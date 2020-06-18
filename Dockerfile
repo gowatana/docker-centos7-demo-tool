@@ -9,5 +9,6 @@ RUN yum install \
   bind-utils \
   unzip \
   wget \
+  tcpdump \
   --assumeyes
 
