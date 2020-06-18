@@ -7,6 +7,7 @@ RUN yum install \
   iptables \ 
   net-tools \
   bind-utils \
+  lsof \
   unzip \
   wget \
   nc \
