@@ -7,7 +7,7 @@ git pull.
 $ cd ./docker-centos7-demo-tool/
 ```
 
-buil & run container.
+build & run container.
 
 ```
 # docker image build --tag centos7:local .
