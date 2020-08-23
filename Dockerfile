@@ -13,6 +13,7 @@ RUN yum install \
   nc \
   tcpdump \
   which \
+  openssh-clients \
   --assumeyes; yum clean all
 
 RUN yum install httpd --assumeyes; yum clean all
