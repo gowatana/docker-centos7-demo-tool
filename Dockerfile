@@ -13,5 +13,6 @@ RUN yum install \
   nc \
   tcpdump \
   which \
+  openssh-clients \
   --assumeyes; yum clean all
 
