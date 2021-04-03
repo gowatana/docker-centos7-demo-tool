@@ -19,8 +19,8 @@ CentOS Linux release 7.9.2009 (Core)
 run httpd container.
 
 ```
-# docker image build --tag centos7:local-httpd .
-# docker run -itd -p 8000:80 centos7:local-httpd
-# curl localhost:8000
+$ docker image build --tag centos7:local-httpd .
+$ docker run -itd -p 8000:80 centos7:local-httpd
+$ curl localhost:8000
 ```
 
