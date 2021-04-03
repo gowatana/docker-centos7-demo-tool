@@ -15,4 +15,5 @@ RUN yum install \
   which \
   openssh-clients \
   --assumeyes; yum clean all
+RUN yum update --assumeyes; yum clean all
 
