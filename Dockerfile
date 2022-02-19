@@ -18,7 +18,8 @@ RUN yum install \
 
 RUN yum install httpd --assumeyes; yum clean all
 
-RUN sed -i 's|Listen 80|Listen 8000|' /etc/httpd/conf/httpd.conf
+RUN chown -R apache:apache /etc/httpd /run/httpd /var/log/httpd; sed -i 's|Listen 80|Listen 8000|' /etc/httpd/conf/httpd.conf
+USER apache
 EXPOSE 8000
 CMD ["httpd", "-D", "FOREGROUND"]
 
