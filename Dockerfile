@@ -17,6 +17,8 @@ RUN yum install \
   --assumeyes; yum clean all
 
 RUN yum install httpd --assumeyes; yum clean all
-EXPOSE 80
+
+RUN sed -i 's|Listen 80|Listen 8000|' /etc/httpd/conf/httpd.conf
+EXPOSE 8000
 CMD ["httpd", "-D", "FOREGROUND"]
 
