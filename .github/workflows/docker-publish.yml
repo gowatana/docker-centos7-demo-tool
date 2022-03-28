@@ -8,7 +8,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: centos7
+  IMAGE_NAME: centos7-demo-tool
 
 jobs:
   build-and-push-image:
